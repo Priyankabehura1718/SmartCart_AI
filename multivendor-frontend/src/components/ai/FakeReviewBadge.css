@@ -1,0 +1,127 @@
+/* src/components/ai/FakeReviewBadge.css */
+.frd {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.frd__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.frd__ai-icon {
+  width: 32px; height: 32px;
+  border-radius: var(--radius-md);
+  background: var(--accent-muted);
+  border: 1px solid var(--border-accent);
+  color: var(--accent);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.frd__title {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.frd__subtitle {
+  display: block;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.frd__input {
+  width: 100%;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+  font-size: 13px;
+  color: var(--text-primary);
+  resize: vertical;
+  min-height: 70px;
+  font-family: var(--font-body);
+  transition: border-color var(--transition);
+}
+.frd__input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-muted);
+}
+.frd__input::placeholder { color: var(--text-muted); }
+
+.frd__btn { align-self: flex-start; }
+
+.frd__spinner {
+  width: 14px; height: 14px;
+  border: 2px solid rgba(0,0,0,0.3);
+  border-top-color: var(--text-inverse);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+}
+
+.frd__result {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid;
+}
+.frd__result--danger { background: var(--danger-muted); border-color: rgba(255,90,90,0.25); }
+.frd__result--success { background: var(--success-muted); border-color: rgba(61,220,132,0.25); }
+
+.frd__result-icon {
+  font-size: 18px;
+  line-height: 1;
+}
+.frd__result--danger .frd__result-icon { color: var(--danger); }
+.frd__result--success .frd__result-icon { color: var(--success); }
+
+.frd__result-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.frd__result-body strong {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.frd__confidence-bar {
+  height: 4px;
+  background: var(--bg-overlay);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.frd__confidence-fill {
+  height: 100%;
+  background: var(--c);
+  border-radius: 2px;
+  transition: width 0.6s ease;
+}
+.frd__confidence-label {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* Review Trust Badge */
+.rtb {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  font-weight: 600;
+}
+.rtb--fake { background: var(--warning-muted); color: var(--warning); }
+.rtb--genuine { background: var(--success-muted); color: var(--success); }
