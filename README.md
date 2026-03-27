@@ -1,4 +1,4 @@
-#  SmartCart AI – AI-Powered Smart E-commerce Platform
+# Hybrid Deep Learning Framework for Fake Review Detection and Personalized Recommendation (SmartCart AI – AI-Powered Smart E-commerce Platform)
 
 ##  Overview
 
