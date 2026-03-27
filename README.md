@@ -22,7 +22,7 @@ It provides personalized product recommendations and detects fake reviews to imp
 
 ### 🔹 Recommendation System
 
-* TF-IDF (Term Frequency - Inverse Document Frequency)
+* TF-IDF (Term Frequency - Inverse Document Frequency) + SVD_models
 * Cosine Similarity for product matching
 
 ### 🔹 Fake Review Detection
